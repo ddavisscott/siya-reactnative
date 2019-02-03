@@ -42,7 +42,7 @@ export class Walkthrough extends React.Component {
         style={styles.list}
         data={items}
         onMomentumScrollEnd={this.onScrollEnd}
-        keyExtractor={(item) => items.indexOf(item)}
+        keyExtractor={(item) => item.toString()}
         pagingEnabled={true}
         horizontal
         renderSeparator={() => null}
